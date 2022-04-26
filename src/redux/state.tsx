@@ -1,8 +1,8 @@
-type MessageType = {
+export type MessagesType = {
     id: number
     message: string
 }
-type DialogsType = {
+export type DialogsType = {
     id: number
     name: string
 }
@@ -15,7 +15,7 @@ type ProfilePageType = {
     posts: Array<PostsType>
 }
 type DialogsPageType = {
-    messages: Array<MessageType>
+    messages: Array<MessagesType>
     dialogs: Array<DialogsType>
 }
 type SidebarType = {}
