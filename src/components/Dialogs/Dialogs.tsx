@@ -31,8 +31,11 @@ const Dialogs = (props: DialogsPropsType) => {
             <div className={style.messagesItem}>
                 {messagesElements}
             </div>
-            <textarea ref={newMessageElement}></textarea>
-            <button onClick={addMessage}>add message</button>
+            <div>
+                <textarea ref={newMessageElement}></textarea>
+                <button onClick={addMessage}>add message</button>
+            </div>
+
         </div>
     );
 };
